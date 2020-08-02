@@ -1,0 +1,29 @@
+{
+    "name": "aiomlm/auth-system",
+    "description": "Authentication system for aiomlm",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pran pegu",
+            "email": "ffegu0617@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "spatie/laravel-permission": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aiomlm\\Auth\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                 "Aiomlm\\Auth\\AuthServiceProvider"
+            ]
+        }
+    }
+}
